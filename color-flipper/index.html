@@ -5,8 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript Color Flipper</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      h1 {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        border-radius: 1px solid black;
+        padding: 1rem 5rem;
+        border-radius: 8px;
+      }
+
+      button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1rem 5rem;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: all 0.25s ease-in-out;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      button:hover {
+        padding: 1.5rem 7.5rem;
+      }
+    </style>
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>Javascript Color Flipper</h1>
+    <h1 id="colorName">COLOR:</h1>
+    <button id="clickHandler">CLICK ME</button>
   </body>
 </html>
